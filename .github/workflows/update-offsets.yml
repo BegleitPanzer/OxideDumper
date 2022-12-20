@@ -1,0 +1,37 @@
+name: update-offsets
+
+on:  
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+    
+jobs:
+  update:
+    name: Update
+    env:
+      USERPASS: ${{ secrets.USERPASS }}
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.10' 
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+    - name: Run main script
+      run: python main.py
+    - name: Configure git
+      run: |
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "github-actions[bot]"
+    - name: Commit and Add changes
+      run: |
+        cat offsets.h
+        git add manifestid
+        git add offsets.h
+        git commit -m "Update offsets"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
