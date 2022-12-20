@@ -26,9 +26,8 @@ jobs:
         git config --global user.name "github-actions[bot]"
     - name: Commit and Add changes
       run: |
-        cat offsets.h
-        git add manifestid
-        git add offsets.h
+        git add -f manifestid
+        git add -f offsets.h
         git commit -m "Update offsets"
     - name: Push changes
       uses: ad-m/github-push-action@master
