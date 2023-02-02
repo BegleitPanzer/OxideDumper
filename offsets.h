@@ -4,10 +4,10 @@
 namespace offsets 
 {
 	//script.json offsets
-	roffset BaseNetworkable_c = 0x2e4d7b0; 
-	roffset Graphics_c = 0x2e817a8; 
-	roffset MainCamera_c = 0x2ea9870; 
-	roffset BaseEntity_c = 0x2ed29a0; 
+	roffset BaseEntity_c = 0x2eac938; 
+	roffset BaseNetworkable_c = 0x2ead3c8; 
+	roffset Graphics_c = 0x2ee2510; 
+	roffset MainCamera_c = 0x2f0a650; 
 	//Base Player
 	roffset BasePlayer___menuOption_Climb = 0x240; 
 	roffset BasePlayer___menuOption_Drink = 0x298; 
@@ -198,9 +198,10 @@ namespace offsets
 	roffset BaseProjectile_needsCycle = 0x30F; 
 	roffset BaseProjectile_isCycling = 0x310; 
 	roffset BaseProjectile_aiming = 0x311; 
-	roffset BaseProjectile_isBurstWeapon = 0x312; 
-	roffset BaseProjectile_canChangeFireModes = 0x313; 
-	roffset BaseProjectile_defaultOn = 0x314; 
+	roffset BaseProjectile_useEmptyAmmoState = 0x312; 
+	roffset BaseProjectile_isBurstWeapon = 0x313; 
+	roffset BaseProjectile_canChangeFireModes = 0x314; 
+	roffset BaseProjectile_defaultOn = 0x315; 
 	roffset BaseProjectile_internalBurstRecoilScale = 0x318; 
 	roffset BaseProjectile_internalBurstFireRateScale = 0x31C; 
 	roffset BaseProjectile_internalBurstAimConeScale = 0x320; 
