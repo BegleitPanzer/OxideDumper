@@ -4,10 +4,10 @@
 namespace offsets 
 {
 	//script.json offsets
-	roffset BaseEntity_c = 0x2eac818; 
-	roffset BaseNetworkable_c = 0x2ead2a8; 
-	roffset Graphics_c = 0x2ee2440; 
-	roffset MainCamera_c = 0x2f0a598; 
+	roffset BaseEntity_c = 0x2ec4270; 
+	roffset BaseNetworkable_c = 0x2ec4d00; 
+	roffset Graphics_c = 0x2efa880; 
+	roffset MainCamera_c = 0x2f22a98; 
 	//Base Player
 	roffset BasePlayer___menuOption_Climb = 0x240; 
 	roffset BasePlayer___menuOption_Drink = 0x298; 
@@ -219,9 +219,10 @@ namespace offsets
 	roffset BaseProjectile_hipAimConeScale = 0x35C; 
 	roffset BaseProjectile_hipAimConeOffset = 0x360; 
 	roffset BaseProjectile_isReloading = 0x364; 
-	roffset BaseProjectile_swaySampleTime = 0x368; 
-	roffset BaseProjectile_lastShotTime = 0x36C; 
-	roffset BaseProjectile_reloadPressTime = 0x370; 
+	roffset BaseProjectile_timeSinceReloadFinished = 0x368; 
+	roffset BaseProjectile_swaySampleTime = 0x36C; 
+	roffset BaseProjectile_lastShotTime = 0x370; 
+	roffset BaseProjectile_reloadPressTime = 0x374; 
 	roffset BaseProjectile_ammoTypePreReload = 0x378; 
 	roffset BaseProjectile_fractionalReloadDesiredCount = 0x380; 
 	roffset BaseProjectile_fractionalReloadNumAdded = 0x384; 
