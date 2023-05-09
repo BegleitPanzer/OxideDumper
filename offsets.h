@@ -4,10 +4,10 @@
 namespace offsets 
 {
 	//script.json offsets
-	roffset BaseEntity_c = 0x2f518e8; 
-	roffset BaseNetworkable_c = 0x2f52378; 
-	roffset Graphics_c = 0x2f89880; 
-	roffset MainCamera_c = 0x2fb1eb0; 
+	roffset BaseEntity_c = 0x2f53918; 
+	roffset BaseNetworkable_c = 0x2f543a8; 
+	roffset Graphics_c = 0x2f8b8b8; 
+	roffset MainCamera_c = 0x2fb3f08; 
 	//Base Player
 	roffset BasePlayer___menuOption_Climb = 0x248; 
 	roffset BasePlayer___menuOption_Drink = 0x2A8; 
