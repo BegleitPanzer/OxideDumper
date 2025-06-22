@@ -53,7 +53,8 @@ if open("manifestid", "r").read() != manifestid:
 
     os.system(os.getcwd() + "/steamcmd/steamcmd.exe +login " + os.getenv("USERPASS").split(":")[0] + " " + os.getenv("USERPASS").split(":")[1] + " +download_depot 252490 252495 " + manifestid + " +quit")
     
-    os.system("il2cppdumper\Il2CppDumper.exe steamcmd/steamapps/content/app_252490/depot_252495/GameAssembly.dll steamcmd/steamapps/content/app_252490/depot_252495/RustClient_Data/il2cpp_data/Metadata/global-metadata.dat")
+    # os.system("il2cppdumper\Il2CppDumper.exe steamcmd/steamapps/content/app_252490/depot_252495/GameAssembly.dll steamcmd/steamapps/content/app_252490/depot_252495/RustClient_Data/il2cpp_data/Metadata/global-metadata.dat")
+    os.system(r"il2cppdumper\Il2CppDumper.exe steamcmd/steamapps/content/app_252490/depot_252495/GameAssembly.dll steamcmd/steamapps/content/app_252490/depot_252495/RustClient_Data/il2cpp_data/Metadata/global-metadata.dat")
     
     if os.path.exists("offsets.h"):
         os.remove("offsets.h")
